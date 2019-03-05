@@ -4,4 +4,8 @@ stage('Build') {
         checkout scm
 
     }
+ node {
+        echo 'TEsting' + env.BRANCH_NAME
+    }
+
 }
